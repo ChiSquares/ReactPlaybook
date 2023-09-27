@@ -89,11 +89,11 @@ const SurveyPageContent = () => {
 export default React.memo(SurveyPage);
 
 export type surveyProps = {
-  survey: SurveyModel | undefined | null;
+  survey: SurveyModel;
   setActivePage: Function;
   changeLanguage: Function;
-  participantId?: string | undefined | null;
-  language?: string | undefined | null;
+  participantId?: string;
+  language?: string;
   userCountry?: CountryModel;
   setUserCountry: Function;
   setSurvey?: Function;

@@ -3,8 +3,8 @@ import { SIGNALR_SERVICE } from "../api-url";
 import { getDeviceId } from "./device-helper-service";
 
 export class SignalRService {
-  private hubConnection: signalR.HubConnection | undefined;
-  private deviceId: string | undefined;
+  private hubConnection: signalR.HubConnection;
+  private deviceId: string;
 
   constructor() {
     if (!this.deviceId) {
